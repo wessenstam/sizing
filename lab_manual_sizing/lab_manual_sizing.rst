@@ -9,7 +9,7 @@ Overview
 
 Walkthrough a sizing exercise where you manually manipulate a rvtools export, and manually configure the Nutanix nodes.
 
-There are times when doing a sizing for a prospect or customer is more complicated. They may have multiple locations with multiple vCenters, and there buy multiple RVTools exports. This can require you to manually manipulate the data to get the information you need.
+There are times when doing a sizing for a prospect or customer is more complicated. They may have multiple locations with multiple vCenters, and there may be multiple RVTools exports. This can require you to manually manipulate the data to get the information you need.
 
 In this lab we will use a singe RVTools that contains multiple sites and clusters. The prospect is looking to move to Nutanix, and do a datacenter consolidation.
 
@@ -223,15 +223,112 @@ Fill out the following fields and click **Save**:
 
 We now have all of our workloads added.
 
-Review/Modify Recommended Nodes
+Review Recommended Nodes
 ...............................
 
+Now that we have our workloads inputed, lets review what Sizer has recommended. We see that Sizer has recommended 9 x NX-3160-G5 nodes.
 
+.. figure:: images/manual_sizing_06.png
 
+We see that our percentages for CPU usage is 81%, Memory usage is 73%, and SSD is 83% (with HDD at 13%).
 
+Lets look at how they are configured, Click on **Modify**.
 
-Reviewing The Manual Sizing
-+++++++++++++++++++++++++++
+Now click **Manual**.
+
+.. figure:: images/manual_sizing_07.png
+
+The first thing we notice is that it has suggested HDD's as part of the config. We know our prospect wants an all flash configuration.
+
+Lets go and review the suggested config. Click **Edit** next to NX-3060-G5.
+
+.. figure:: images/manual_sizing_08.png
+
+We can now manually manipulate all of the options for the nodes we select.
+
+Let's look at our CPU options, click on the drop down for **CPU Type**.
+
+.. figure:: images/manual_sizing_09.png
+
+We see that Sizer has selected the CPU in the middle of the 5 CPU options for the NX-3060-G5.
+
+Next let's look at our memory options, click on the drop down for **RAM**.
+
+.. figure:: images/manual_sizing_10.png
+
+We see that Sizer has recommended 8 x 32gig Memory Modules, leaving 8 slots open (for possible upgrade later)
+
+Next let's look at our Storage options, click on the drop down for **SSD**.
+
+.. figure:: images/manual_sizing_11.png
+
+We see Sizer has has recommended 2 x 3840gig SSDs (the biggest option we offer in SSD currently).
+
+If you click on the **HDD* drop down you will see the HDD options as well.
+
+Sizer recommended 4 x 1tb HDDs.
+
+Modify Recommended Nodes
+........................
+
+Now that we have reviewed all of the Sizer recommendations, lets make some manual modifications.
+
+We know we need to do this for the Storage configuration to bring our configuration to All Flash, but what making changes to the other options. If we make changes to the CPU and Memory options, as well as the Storage, we could possibly bring the node count down. This would have a benefit to the prospect in reduced licensing costs.
+
+Lets give our theory a try. Make the following changes, then click **Save**:
+
+- **Quantity** - 8
+- **CPU Type** - 2 x E5-2680 v4
+- **RAM** - 8 x 32gig Memory Module
+- **SSD** - 6 x 1920gig
+- **HDD** - N/A
+
+.. figure:: images/manual_sizing_12.png
+
+Now let's see what that has done for our usage percentages, click **Apply**.
+
+.. figure:: images/manual_sizing_13.png
+
+We see our percentages for CPU usage is 73%, Memory usage is 85%, and SSD is 68%. All green and room for some growth.
+
+That looks good, but what happens when we try a different node type?
+
+Go back in and modify the configuration using the options below, and then let's look at our usage percentages.
+
+- **Model** - NX-8035-G6
+- **Quantity** - 5
+- **CPU Type** - 2 x Skylake 6140
+- **RAM** - 16 x 32gig Memory Module
+- **SSD** - 6 x 3.84tb
+- **HDD** - N/A
+
+Let's see what the percentages changed to.
+
+.. figure:: images/manual_sizing_14.png
+
+We our percentages for CPU usage is 71%, Memory usage is 64%, and SSD is 54%.
+
+This is a great configuration for the prospect migrate to and have room for growth over the next year. We also were able to take them from 9 nodes to 5 nodes.
+
+.. note::
+
+  Things to consider when making manual changes.
+
+  - Reducing the node count to much may affect N+1. Make sure you account for that.
+  - You may want to prepare multiple sizing configurations to present to the prospect or customer (think Good, Better, Best)
+
+Download the Build of Materials (BOM)
++++++++++++++++++++++++++++++++++++++
+
+Our next step is to download the BOM for review with the Prospect or Customer.
+
+Click the :fa:`ellipsis-v`, and then click **Download BOM**.
+
+Ensure that all options are checked, and click **Download**.
 
 Takeaways
 +++++++++
+
+- Sizer makes it easy to make manual changes, and review how it affects the workloads.
+- Sizer gives you many options to configure a solution
+- There are many solutions that may work for a prospect or customer.
