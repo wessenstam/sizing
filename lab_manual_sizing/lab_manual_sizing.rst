@@ -264,7 +264,7 @@ Next let's look at our Storage options, click on the drop down for **SSD**.
 
 We see Sizer has has recommended 2 x 3840gig SSDs (the biggest option we offer in SSD currently).
 
-If you click on the **HDD* drop down you will see the HDD options as well.
+If you click on the **HDD** drop down you will see the HDD options as well.
 
 Sizer recommended 4 x 1tb HDDs.
 
@@ -273,7 +273,7 @@ Modify Recommended Nodes
 
 Now that we have reviewed all of the Sizer recommendations, lets make some manual modifications.
 
-We know we need to do this for the Storage configuration to bring our configuration to All Flash, but what making changes to the other options. If we make changes to the CPU and Memory options, as well as the Storage, we could possibly bring the node count down. This would have a benefit to the prospect in reduced licensing costs.
+We kneed to do this for the Storage configuration to bring our configuration to All Flash, but what about making changes to the other options? If we make changes to the CPU and Memory options, as well as the Storage, we could possibly bring the node count down. This would have a benefit to the prospect in reduced licensing costs.
 
 Lets give our theory a try. Make the following changes, then click **Save**:
 
@@ -306,7 +306,7 @@ Let's see what the percentages changed to.
 
 .. figure:: images/manual_sizing_14.png
 
-We our percentages for CPU usage is 71%, Memory usage is 64%, and SSD is 54%.
+We see our percentages for CPU usage is 71%, Memory usage is 64%, and SSD is 54%.
 
 This is a great configuration for the prospect migrate to and have room for growth over the next year. We also were able to take them from 9 nodes to 5 nodes.
 
