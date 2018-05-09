@@ -11,6 +11,7 @@
   rvtools/rvtools
   live_optics/live_optics
   lab_automatic_sizing/lab_automatic_sizing
+  lab_manual_sizing/lab_manual_sizing
 
 .. toctree::
   :maxdepth: 2
@@ -42,7 +43,7 @@ What's New
 - Workshop updated for the following software versions:
   - Sizer 3.0
   - RV Tools Import
-.. - Added :ref:`example_lab_3`
+
 
 Access Instructions
 +++++++++++++++++++

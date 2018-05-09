@@ -18,6 +18,9 @@ Automatic Sizing
 
   :download:`automatic_sizing_rvtools.xlsx <./automatic_sizing_rvtools.xlsx>`
 
+  Create the Scenario
+  ...................
+
 Open http://sizer.nutanix.com
 
 Login with your **My Nutanix Login** credentials.
@@ -38,6 +41,9 @@ Enter the following information, and click **Create**:
 
 .. figure:: images/automatic_sizing_01.png
 
+Add Workloads
+.............
+
 Click the :fa:`ellipsis-v`, and then click **Import Workloads**.
 
 Click **Upload File**, and point to the RVTools export you downloaded above.
@@ -47,6 +53,9 @@ Click **Upload File**, and point to the RVTools export you downloaded above.
   When importing RVTools into Sizer, it will only account for **Powered On** VMs.
 
 .. figure:: images/automatic_sizing_02.png
+
+Review Recommended Nodes
+........................
 
 We see that Sizer has selected a NX-1465S-G5 (4 x NX1065s-G5 Nodes).
 
