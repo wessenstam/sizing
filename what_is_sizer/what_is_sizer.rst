@@ -80,7 +80,7 @@ The following are some additional things you will want to ask for when doing a S
 What to ask for? Workload: VDI
 ..............................
 
-The following are some additional things you will want to ask for when doing a VDI/EUC sizing:
+The following are some additional things you will want to ask for when doing a VDI /EUC sizing:
 
 - VDI Broker (Citrix XenDesktop or VMware Horizon View).
 - What types of users, and how many of each type.
