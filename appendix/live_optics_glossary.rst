@@ -1,8 +1,8 @@
 .. _live_optics_glossary:
 
---------------
+--------------------
 Live Optics Glossary
---------------
+--------------------
 
 - **User** - User of the Live Optics Portal (VAR or Partner OEM)
 

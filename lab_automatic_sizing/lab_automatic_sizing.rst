@@ -18,8 +18,8 @@ Automatic Sizing
 
   :download:`automatic_sizing_rvtools.xlsx <./automatic_sizing_rvtools.xlsx>`
 
-  Create the Scenario
-  ...................
+Create the Scenario
+...................
 
 Open http://sizer.nutanix.com
 

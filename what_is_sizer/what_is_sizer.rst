@@ -7,7 +7,7 @@ What is Sizer
 Accessing Sizer
 +++++++++++++++
 
-\http://sizer.nutanix.com or \http://my.nutanix.com, then choose: **Sizer**
+http://sizer.nutanix.com or http://my.nutanix.com, then choose: **Sizer**
 
 What is Sizer
 +++++++++++++
