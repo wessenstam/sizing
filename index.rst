@@ -2,32 +2,38 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Exercises and Labs
-  :name: _exercises_and_labs
+  :caption: Discovery
+  :name: _discovery
   :hidden:
 
-  what_is_sizer/what_is_sizer
-  lab_intro_to_sizer/lab_intro_to_sizer
-  rvtools/rvtools
-  live_optics/live_optics
-  lab_automatic_sizing/lab_automatic_sizing
-  lab_manual_sizing/lab_manual_sizing
+  discovery/servervirt/servervirt
+  discovery/databases/databases
+  discovery/vdi/vdi
+  discovery/fileservices/fileservices
+  discovery/bigdata/bigdata
+  discovery/uc/uc
+  discovery/exchange/exchange
+  discovery/ntnx/ntnx
 
 .. toctree::
   :maxdepth: 2
-  :caption: Optional Labs
-  :name: _optional_labs
+  :caption: Data Collection & Analysis
+  :name: _datacollection
   :hidden:
 
-
+  datacollection/rvtools/rvtools
+  datacollection/rvtools-lab1/rvtools-lab1
+  datacollection/rvtools-lab1-answers/rvtools-lab1-answers
+  datacollection/liveoptics/liveoptics
 
 .. toctree::
   :maxdepth: 2
-  :caption: Appendix
-  :name: _appendix
+  :caption: Sizer
+  :name: _sizer
   :hidden:
 
-  appendix/live_optics_glossary
+  sizer/overview/overview
+  sizer/intro-lab/intro-lab
 
 .. _getting_started:
 
@@ -35,24 +41,20 @@
 Getting Started
 ---------------
 
-Welcome to the Nutanix Sizing Workshop! This workbook accompanies an instructor-led session that introduces Nutanix technologies sizing guidelines and best practices. You will also be introduced to the Nutanix Sizer tool, and work through multiple sizing scenarios.
+Welcome to the Nutanix Sizing Workshop! This workbook provides self-paced instruction and exercises that introduce Nutanix sizing guidelines and best practices. You will also be introduced to the Nutanix Sizer tool, and work through multiple sizing scenarios.
 
 What's New
 ++++++++++
 
-- Workshop updated for the following software versions:
-  - Sizer 3.0
-  - RV Tools Import
-
+- Initial Version (6/22/18)
 
 Access Instructions
 +++++++++++++++++++
 
-The Nutanix Sizer tool can be accessed a number of different ways:
+The Nutanix Sizer tool is available to Nutanix employees and partners at http://sizer.nutanix.com
 
-Sizer Access
-.................
+**Nutanix Employees** - Choose **Salesforce Login**
 
-**Nutanix Employees** - http://sizer.nutanix.com or http://my.nutanix.com, then choose: **Sizer**
+.. note:: While Nutanix employees can access Sizer via their My Nutanix credentials, accessing Sizer via Salesforce provides simplified workflows for uploading BOMs and creating quotes.
 
-**Partners** - http://sizer.nutanix.com, then choose **My Nutanix Login**
+**Partners** - Choose **My Nutanix Login**
