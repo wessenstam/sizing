@@ -31,6 +31,6 @@ Needed resources
 Dependent on the audience and the setting the following resources might be needed:
 
 #. Beamer in location
-#. Way of presenting the presentation which can be found :download:`here <ppt/presentation.pptx>`
+#. Way of presenting the presentation which can be found `here <https://docs.google.com/presentation/d/1efFT1HcDeKVMe25VUJ-go1tsW9OVoUGS4IXxd7oiQls/edit?usp=sharing>`_
 #. Microsoft PowerPoint for presenting
 #. WebEx account and access if presenting using a the internet
