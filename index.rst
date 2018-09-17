@@ -58,3 +58,5 @@ The Nutanix Sizer tool is available to Nutanix employees and partners at http://
 .. note:: While Nutanix employees can access Sizer via their My Nutanix credentials, accessing Sizer via Salesforce provides simplified workflows for uploading BOMs and creating quotes.
 
 **Partners** - Choose **My Nutanix Login**
+
+.. note:: If the partners are missing OEM in the list of Models, please register at  http://www.nutanix.com/partners/become-partner-oem/ and follow the process.
